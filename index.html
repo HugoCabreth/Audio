@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Audio</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Reproductor de Audio</h1>
+        <script>
+            var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            var f=new Date();
+            document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+        </script>
+        <br>
+        <audio src="assets/Jeremy.mp3" preload="auto" controls></audio><br>
+        <audio id="player1" src="assets/Jeremy.mp3" autoplay loop></audio><br>
+        <button onclick="document.getElementById('player1').pause();">Detener Audio</button>
+        <br>
+        <br>
+        <audio src="assets/Fallout.mp3" preload="auto" controls></audio><br>
+        <audio id="player2" src="assets/Fallout.mp3" autoplay loop></audio><br>
+        <button onclick="document.getElementById('player2').pause();">Detener Audio</button>
+        <br>
+        <br>
+        <audio src="assets/Cod.mp3" preload="auto" controls></audio><br>
+        <audio id="player3" src="assets/Cod.mp3" autoplay loop></audio><br>
+        <button onclick="document.getElementById('player3').pause();">Detener Audio</button>
+    </div>
+</body>
+</html>
